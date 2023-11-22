@@ -1,0 +1,154 @@
+/* FONTS */
+  @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Metal+Mania&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font: 5rem "Metal Mania", serif;
+    color: #CED3DA;
+    margin: 1.5rem;
+}
+
+p {
+    font: 1.05rem "Roboto Mono", sans-serif;
+    color: #CED3DA;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    background: #001632;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
+
+.col-1 {
+    width: 60vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("half-background.jpeg");
+}
+
+.col-2 {
+    width: 40vw;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow-y: auto;
+    top: 0; right: 0; bottom: 0;
+    width: 55vw;
+    height: 92vh;
+    margin: 2rem;
+    padding: 4rem 2rem 4rem 2rem;
+    position: absolute;
+    z-index: 1000;
+    border: 5px solid #B6E3FF;
+    background: #082345;
+    box-shadow: 0 0 25px 10px #B6E3FF30;
+}
+
+.form-container p {
+    font: 1.4rem "Iceberg", serif;
+    color: #CED3DA;
+    text-align: center;
+    margin: 0.25rem;
+}
+
+/* DESCRIPTION */
+.desc-container {
+    margin: 3rem 0 3rem 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.desc img {
+    height: 2rem;
+}
+
+.desc p {
+    font: 1.05rem "Roboto Mono", sans-serif;
+    color: #CED3DA;
+    text-align: justify;
+}
+
+/* EMAIL FORM */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form {
+    width: 100%;
+}
+
+.form-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem
+}
+
+label {
+    font: 1.05rem "Roboto Mono", sans-serif;
+    color: #CED3DA;
+    text-align: justify;
+}
+
+.error-state {
+    display: none;
+    font: 1.05rem "Roboto Mono", sans-serif;
+    color: #E48386;
+    text-align: justify;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background: #AFCFDA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font: 1.5rem "Roboto Mono", sans-serif;;
+}
+
+.btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 16px 0 16px 0;
+    border-radius: 15px;
+    border: none;
+    background: #2777C2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font: 1.05rem "Roboto Mono", sans-serif;
+    color: #ffffff;
+}
+
+/* SUCCESS STATE */
+.success-state {
+    display: none;
+    margin: 3rem;
+    font: 2.5rem "Iceberg", sans-serif;
+    color: #CED3DA;
+    text-align: center;
+}
