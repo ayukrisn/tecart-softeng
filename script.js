@@ -1,7 +1,8 @@
 const validateEmail = (event) => {
     event.preventDefault(); // Prevent default form submission behavior
 
-    const input = document.getElementById("email").value;
+    const emailInput = document.getElementById("email").value;
+    const input = emailInput.value.trim()
     const filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (input.match(filter)) {
